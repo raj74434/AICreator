@@ -4,19 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-import com.aicreator.AICreator.dto.ChoiceDto;
-import com.aicreator.AICreator.dto.MessageDto;
-import com.aicreator.AICreator.dto.PromptDto;
-import com.aicreator.AICreator.dto.ResponseDto;
+import com.aicreator.AICreator.dto.*;
 import com.aicreator.AICreator.service.UserQueryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserQuestions {
@@ -24,6 +17,7 @@ public class UserQuestions {
 	@Autowired
 	private UserQueryService userQueryService;
 
+	@CrossOrigin(origins = "*")
 	@PostMapping("/findit")
     public ResponseEntity<ResponseDto> integrateGPT(@RequestBody PromptDto promptDto) {
 		
@@ -35,10 +29,13 @@ public class UserQuestions {
     	return new ResponseEntity(res, HttpStatus.ACCEPTED);
 //
 	}
-	
+
+	@CrossOrigin(origins = "*")
 	@GetMapping("/")
-	public String check() {
-		return "Hello";
+	public TestDto check() {
+		TestDto tst= new TestDto();
+		tst.setMsg("Hello");
+		return tst;
 	}
 	
 	

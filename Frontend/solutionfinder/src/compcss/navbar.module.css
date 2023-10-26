@@ -1,0 +1,21 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border: solid grey;
+}
+
+.name{
+    margin-left: 30px;
+    color: #007aff;
+}
+
+.shayri{
+    color: #007aff;
+    margin-right: 30px;
+}
+.shayri:hover{
+    cursor: pointer;
+    color: #56a3f5;
+}

@@ -16,7 +16,7 @@ public class AiCreatorApplication {
 	public RestTemplate createRestTemplate() {
 		 RestTemplate restTemplate = new RestTemplate();
 		 restTemplate.getInterceptors().add((request, body, execution) -> {
-	            request.getHeaders().add("Authorization", "Bearer " + "");
+	            request.getHeaders().add("Authorization", "Bearer " + "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");
 	            return execution.execute(request, body);
 	        });
 	        return restTemplate;

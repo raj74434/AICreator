@@ -1,0 +1,67 @@
+.body{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.right{
+    text-align: center;
+}
+
+.codetest{
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 20px 30px;
+    background-color: transparent;
+    font-size: 20px;
+    height: 630px;
+    color: white;
+}
+
+.btns{
+    margin: auto;
+    text-align: center;
+    /* margin-left: 30px; */
+}
+
+.convert_btn{
+    background-color: #007aff;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+.convert_btn:hover{
+    background-color: #52a0f3;
+    color: white;
+    cursor: pointer;
+}
+
+.select_language{
+    font-size: 20px;
+    margin-left: 30px;
+    padding: 10px 30px;
+    
+}
+
+
+
+.right{
+    margin-right: 3%;
+    overflow: scroll;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: solid grey;
+    justify-self: end;
+    padding: 1px 30px;
+    background-color: transparent;
+    font-size: 20px;
+    height: 670px;
+    color: white;
+    width: 80%;
+}
