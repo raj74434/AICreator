@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import style from "../pagescss/searchpage.module.css";
+import Navbar from "../components/Navbar";
 
 
 const SearchPage=()=>{
@@ -65,8 +66,9 @@ const SearchPage=()=>{
 
 
     return(
+      <div> <Navbar/>
         <div className={style.body}>
-
+         
             <div className={style.left}>
 
             <textarea className={style.codetest} onChange={(e)=>setQuery(e.target.value)} rows="4" cols="35"  placeholder="Enter your code here..."></textarea>
@@ -106,6 +108,11 @@ const SearchPage=()=>{
                 
 
             </div>
+
+
+
+        </div>
+
 
 
 

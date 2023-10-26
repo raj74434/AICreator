@@ -1,13 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import SearchPage from './pages/SearchPage';
-import Navbar from './components/Navbar';
+import { Routes,Route } from 'react-router-dom';
+import ShayriPage from './pages/ShayriPage';
 
 function App() {
   return (
+
     <div >
-      <Navbar/>
-      <SearchPage/>
+      <div >
+      {/* <Routes>
+        <Route path='/' element={<SearchPage/>}/>
+        <Route path='/shayri' element={<ShayriPage/>}/>
+      </Routes> */}
+  <SearchPage/>
+    </div>
+     
+      
     </div>
   );
 }
